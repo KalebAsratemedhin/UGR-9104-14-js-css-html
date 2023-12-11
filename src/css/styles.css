@@ -263,7 +263,7 @@ td {
     border: 1px solid;
     border-collapse: collapse;
     font-family: 'EB Garamond', serif;
-    font-size: larger;
+
 }
 
 table {
@@ -419,7 +419,6 @@ thead tr {
     .about-main__travel-unseen-content :last-child .about-main__place-card-img{
         float: left;
         margin-right: 10px;
-        /* min-width: 50%; */
     }
 }
 /* desktop */
@@ -441,6 +440,12 @@ thead tr {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+
+    }
+    .about-main__travel-seen-place-card .about-main__place-card-img{
+        float: left;
+        margin-right: 15px;
+        min-width: 50%;
     }
 
 }
@@ -865,6 +870,12 @@ thead tr {
     line-height: 80px;
 
 }
+.contact-main__social-link:hover{
+    color:rgb(238, 130, 30);
+}
+.contact-main__download-cv:hover{
+    color: wheat;
+}
 
 /* media query - contact tablet, desktop*/
 @media all and (min-width: 768px){
@@ -872,6 +883,7 @@ thead tr {
         display: flex;
         gap: 3rem;
         padding: 30px;
+        align-items: center;
     }
     .contact-main__location-map iframe{
         min-height: 70% ;
