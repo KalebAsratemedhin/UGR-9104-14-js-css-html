@@ -13,38 +13,36 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
-      <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-      <a href="index.html">Home</a> 
-      <nav>
-        <div class="menu-button">  
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" id="dropdown-label">
-            <img src="images/menu.png" alt="menu logo" width="30" height="30">
-          </label>
-          <div class="menu-content">
-              <ul>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>          
-              </ul>
+    <header class="header">
+      <img class="header__logo" src="images/my_logo.PNG" alt="logo" width="50" height="50">
+      <nav class="header__nav">
+          <a class="header__nav-link header__link" href="index.html">Home</a>
+          <div class="header__menu-button">
+              <input id="header__menu-button-checkbox" type="checkbox">
+              <label id="header__menu-button-label" for="header__menu-button-checkbox">
+                  <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
+              </label>
+              <div class="header__menu-content">
+                  <ul class="header__menu-content-list">
+                      <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="about.html">About</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="portfolio.html">Portfolio</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="blog.html">Blog</a></li>
+                      <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </nav>
     </header>
-    <main>
-      <div class="home-background">
-        <hgroup>
-          <h1>Hey, I am Kaleb Asratemedhin</h1>
-          <p>Software Engineering Student at <abbr title="Addis Ababa University">AAU</abbr> <br> 
+    <main class="home-main">
+      <div class="home-main__home-background">
+        <hgroup class="home-main__home-background-content">
+          <h1 class="home-main__home-background-title">Hey, I am Kaleb Asratemedhin</h1>
+          <p class="home-main__home-background-description">Software Engineering Student at <abbr title="Addis Ababa University">AAU</abbr> <br> 
             Part-time full stack Software Engineer at Google<br>
             3D modeling artist.</p>
         </hgroup>
-      </div>
-      
-    
-      <article class="testimonials">
+      </div>    
+      <article class="home-main__testimonials">
         <h2>Hear about me from people who have worked with me...</h2>
         <blockquote cite="https://twitter.com/YohannesMikiyas">
           <p>
@@ -71,76 +69,74 @@
           <footer>&nbsp;—<i>Willard Danson</i>, Senior Software Engineer at HyperlinkInfoSystem.</footer>
         </blockquote>
       </article>
-      <section class="latest-blogs">
-        <hr>
-        <h2>Latest Blog Posts</h2>
-        <article>
-          <h3>A2SV Generative AI Hackathon Project Expo</h3>
-          <p>
-            Total Chills! The day has come to join A2SVians at the Generative AI
-            Hackathon Project Expo on November 11th (9 am - 6 pm) and November
-            12th (9 am - 12 pm). This is a great chance to see innovation
-            first-hand at its best. Eight talented finalists teams from Morocco,
-            Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
-            projects for Africa. 🌐
-            <a href="blog.html#nov10-2023">more >></a>
-          </p>
-        </article>
-        <article>
-          <h3>Check out our blender animated short video on youtube</h3>
-          <p>
-            It took us, my friend Ben J. Lee and me, 20 days to make this using
-            only blender. I hope you will like it.
-            <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA"> Spring - blender short animation</a>
-            <a href="blog.html#apr30-2020">more >></a>
-          </p>
-        </article>
-        <article>
-          <h3>Teddy Afro Concert</h3>
-          <p>
-            Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
-            feel like the whole country is in this stadium. Peace and chill out
-            people!
-            <a href="blog.html#feb22-2020">more >></a>
-          </p>
-        </article>
-      </section>
-      <section class="portfolio-preview">
-        <hr>
-        <h2>My Portfolio projects</h2>
-        <p>Have a look at some of my projects ranging from fully autonomous micro-mouse robot to 3D animated short movies.</p>
-        <figure id="home-fig">
-          <img src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
-          <img src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
-          <figcaption>Some of my projects. Micro-mouse robot(left) and 3D animation(right).</figcaption>
-        </figure>
-        <p>You can find further information about such projects and others <a href="portfolio.html">here</a>.</p>
-      </section>
-    </main>     
-    
-    <footer id="page-footer">
-      <!-- <hr> -->
-      <div class="back-to-top">
-      <a id="back-to-top" href="index.html">back to top</a>
-
+      <div class="home-main__blog-portfolio-preview">
+        <section class="home-main__latest-blogs">
+          <hr>
+          <h2>Latest Blog Posts</h2>
+          <article>
+            <h3>A2SV Generative AI Hackathon Project Expo</h3>
+            <p>
+              Total Chills! The day has come to join A2SVians at the Generative AI
+              Hackathon Project Expo on November 11th (9 am - 6 pm) and November
+              12th (9 am - 12 pm). This is a great chance to see innovation
+              first-hand at its best. Eight talented finalists teams from Morocco,
+              Kenya, Namibia, Ethiopia, and Cameroon showcase their digital
+              projects for Africa. 🌐
+              <a href="blog.html#nov10-2023">more >></a>
+            </p>
+          </article>
+          <article>
+            <h3>Check out our blender animated short video on youtube</h3>
+            <p>
+              It took us, my friend Ben J. Lee and me, 20 days to make this using
+              only blender. I hope you will like it.
+              <a href="https://www.youtube.com/watch?v=cyp7d-jEvNA"> Spring - blender short animation</a>
+              <a href="blog.html#apr30-2020">more >></a>
+            </p>
+          </article>
+          <article>
+            <h3>Teddy Afro Concert</h3>
+            <p>
+              Every body hands in the air!!! The beloved king of music, Teddy, is back on the stage! I
+              feel like the whole country is in this stadium. Peace and chill out
+              people!
+              <a href="blog.html#feb22-2020">more >></a>
+            </p>
+          </article>
+        </section>
+        <section class="home-main__portfolio-preview">
+          <hr>
+          <h2>My Portfolio projects</h2>
+          <p>Have a look at some of my projects ranging from fully autonomous micro-mouse robot to 3D animated short movies.</p>
+          <figure class="home-main__portfolio-fig">
+            <img class="home-main__portfolio-fig-img" src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
+            <img class="home-main__portfolio-fig-img" src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
+            <figcaption>Some of my projects. Micro-mouse robot(left) and 3D animation(right).</figcaption>
+          </figure>
+          <p>You can find further information about such projects and others <a href="portfolio.html">here</a>.</p>
+        </section>
       </div>
-      <div class="contact">
-        <div class="links">
-      <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-      <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-      <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-      <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+    </main>     
+    <footer class="footer">
+      <div class="footer__back-to-top">
+          <a class="footer__back-to-top-link" href="index.html">back to top</a>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-links">
+          <a class="footer__contact-link" href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+          <a class="footer__contact-link" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+          <a class="footer__contact-link" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+          <a class="footer__contact-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
         </div>
 
         <p>&copy; all rights reserved.</p>
 
-        <address>
+        <address class="footer__contact-address">
           Author: Kaleb Asratemedhin <br>
           Address: Addis Ababa, Ethiopia <br>
           Telephone: +251996304541 <br>
        </address>
       </div>
-
     </footer>
   </body>
 </html>

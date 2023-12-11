@@ -13,77 +13,83 @@
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-          <img src="images/my_logo.PNG" alt="logo" width="50" height="50">
-          <a href="contact.html">Contact</a>
-          <nav>
-              <div class="menu-button">
-                  <input type="checkbox" id="menu-toggle">
-                  <label for="menu-toggle" id="dropdown-label">
-                    <img src="images/menu.png" alt="menu logo" width="30" height="30">
+        <header class="header">
+          <img class="header__logo" src="images/my_logo.PNG" alt="logo" width="50" height="50">
+          <nav class="header__nav">
+              <a class="header__nav-link header__link" href="contact.html">Contact</a>
+              <div class="header__menu-button">
+                  <input id="header__menu-button-checkbox" type="checkbox">
+                  <label id="header__menu-button-label" for="header__menu-button-checkbox">
+                    <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
                   </label>
-                  <div class="menu-content">
-                      <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="portfolio.html">Portfolio</a></li>          
-                          <li><a href="blog.html">Blog</a></li>
+                  <div class="header__menu-content">
+                      <ul class="header__menu-content-list">
+                          <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="index.html">Home</a></li>
+                          <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="about.html">About</a></li>
+                          <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="portfolio.html">Portfolio</a></li>          
+                          <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="blog.html">Blog</a></li>
                       </ul>
                   </div>
               </div>
-        `</nav>
+        ` </nav>
         </header>
-        <main id="main-contact">
+        <main class="contact-main">
           <h1>Contact me</h1>
-          <section id="location">
-            <h2>Location</h2>
-            <address>
-              <p>Country: Ethiopia</p>
-              <p>City: Addis Ababa</p>
-              <p>Subcity: Gulele</p>
-              <p>Street: Algeria st.</p>
-              <p>Building: Addis Ababa University 6 Kilo Campus</p>
-            </address>
-            <h3>Do you need a map?</h3>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31374.23891274205!2d38.749191241457574!3d9.044389829794438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8fcdfd73345d%3A0x71d655e4e7c6c79e!2zQUEgVW5pdmVyc2l0eSA2IEtpbG8gQ2FtcHVzIHwg4YqgLuGKoCDhi6nhipLhiajhiK3hiLLhibIgNiDhiqrhiI4g4Yqr4Yid4Y2T4Yi1!5e0!3m2!1sen!2set!4v1700983219781!5m2!1sen!2set" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <section class="contact-main__location">
+            <div class="contact-main__location-address">
+              <h2>Location</h2>
+              <address>
+                <p>Country: Ethiopia</p>
+                <p>City: Addis Ababa</p>
+                <p>Subcity: Gulele</p>
+                <p>Street: Algeria st.</p>
+                <p>Building: Addis Ababa University 6 Kilo Campus</p>
+              </address>
+            </div>
+            <div class="contact-main__location-map">
+              <h3>Do you need a map?</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31374.23891274205!2d38.749191241457574!3d9.044389829794438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8fcdfd73345d%3A0x71d655e4e7c6c79e!2zQUEgVW5pdmVyc2l0eSA2IEtpbG8gQ2FtcHVzIHwg4YqgLuGKoCDhi6nhipLhiajhiK3hiLLhibIgNiDhiqrhiI4g4Yqr4Yid4Y2T4Yi1!5e0!3m2!1sen!2set!4v1700983219781!5m2!1sen!2set" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </section>
-          <section id="social">
-            <h2>Social Media</h2>
-            <p>Feel free to reach me via the following.</p>
-            <ul>
-              <li><img src="images/gmail.png" alt="gmail logo" width="50" height="50">&nbsp;<a href="mailto:risekab@gmail.com">Email</a></li>
-              <li><img src="images/telegram.png" alt="telegram logo" width="50" height="50">&nbsp;<a href="https://t.me/Thequantumduck">Telegram</a></li>
-              <li><img src="images/twitter.png" alt="twitter logo" width="50" height="50">&nbsp;<a href="https://twitter.com/risekab">Twitter</a></li>
-              <li><img src="images/instagram.png" alt="instagram logo" width="50" height="50">&nbsp;<a href="https://instagram.com/daffytribbiani/">Instagram</a></li>
-            </ul>
-            <h3>You want to hire me? These are for you.</h3>
-            <ul>
-              <li><img src="images/linkedin.png" alt="linked in logo" width="50" height="50">&nbsp;<a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b">Linked in</a></li>
-              <li><img src="images/github.png" alt="github logo" width="50" height="50">&nbsp;<a href="https://github.com/KalebAsratemedhin">Github</a></li>
-              <li><img src="images/leetcode.png" alt="leetcode logo" width="50" height="50">&nbsp;<a href="https://leetcode.com/4ureyes/">Leetcode</a></li>
-              
-            </ul>
-            <a href="other_resources/final-cv.pdf" download="button">Download cv</a>
+          <section class="contact-main__social">
+            <div class="contact-main__social-media">
+              <h2>Social Media</h2>
+              <p>Feel free to reach me via the following.</p>
+              <ul>
+                <li><img class="contact-main__social-img" src="images/gmail.png" alt="gmail logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="mailto:risekab@gmail.com">Email</a></li>
+                <li><img class="contact-main__social-img" src="images/telegram.png" alt="telegram logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://t.me/Thequantumduck">Telegram</a></li>
+                <li><img class="contact-main__social-img" src="images/twitter.png" alt="twitter logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://twitter.com/risekab">Twitter</a></li>
+                <li><img class="contact-main__social-img" src="images/instagram.png" alt="instagram logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://instagram.com/daffytribbiani/">Instagram</a></li>
+              </ul>
+            </div>
+            <div class="contact-main__hire">
+              <h3>You want to hire me? These are for you.</h3>
+              <ul>
+                <li><img class="contact-main__social-img" src="images/linkedin.png" alt="linked in logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b">Linked in</a></li>
+                <li><img class="contact-main__social-img" src="images/github.png" alt="github logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://github.com/KalebAsratemedhin">Github</a></li>
+                <li><img class="contact-main__social-img" src="images/leetcode.png" alt="leetcode logo" width="50" height="50">&nbsp;<a class="contact-main__social-link" href="https://leetcode.com/4ureyes/">Leetcode</a></li>
+                
+              </ul>
+              <a class="contact-main__download-cv" href="other_resources/final-cv.pdf" download="button">Download cv</a>
+
+            </div>
           </section>
         </main>
-        <footer id="page-footer">
-          <!-- <hr> -->
-          <div class="back-to-top">
-          <a id="back-to-top" href="contact.html">back to top</a>
-    
+        <footer class="footer">
+          <div class="footer__back-to-top">
+              <a class="footer__back-to-top-link" href="contact.html">back to top</a>
           </div>
-          <div class="contact">
-            <div class="links">
-          <a href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
-          <a href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
-          <a href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
-          <a href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
+          <div class="footer__contact">
+            <div class="footer__contact-links">
+              <a class="footer__contact-link" href="https://twitter.com/risekab"><img src="images/twitter.png" alt="twitter logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://instagram.com/daffytribbiani/"><img src="images/instagram.png" alt="instagram logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://t.me/Thequantumduck"><img src="images/telegram.png" alt="telegram logo" width="50" height="50"></a>
+              <a class="footer__contact-link" href="https://linkedin.com/in/kaleb-asratemedhin-81748625b"><img src="images/linkedin.png" alt="linked in logo" width="50" height="50"></a>
             </div>
     
             <p>&copy; all rights reserved.</p>
     
-            <address>
+            <address class="footer__contact-address">
               Author: Kaleb Asratemedhin <br>
               Address: Addis Ababa, Ethiopia <br>
               Telephone: +251996304541 <br>
