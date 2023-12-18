@@ -17,16 +17,15 @@
             <img class="header__logo" src="images/my_logo.PNG" alt="logo" width="50" height="50">
             <nav class="header__nav">
                 <a class="header__nav-link header__link" href="portfolio.html">Portfolio</a>
-                <div class="header__menu-button">
-                    <input id="header__menu-button-checkbox" type="checkbox">
-                    <label id="header__menu-button-label" for="header__menu-button-checkbox">
+                <div class="header__menu">
+                    <div class="header__menu-hamburger" >
                       <img class="header__menu-button-icon" src="images/menu.png" alt="menu logo" width="30" height="30">
-                    </label>
+                    </div>
                     <div class="header__menu-content">
-                        <ul class="header__menu-content-list">
-                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="index.html">Home</a></li>
-                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="about.html">About</a></li>
-                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="blog.html">Blog</a></li>
+                        <ul class="header__menu-content-list hide">
+                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="index.html">Home</a></li><hr>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="about.html">About</a></li><hr>
+                            <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="blog.html">Blog</a></li><hr>
                             <li class="header__menu-content-item"><a class="header__menu-content-link header__link" href="contact.html">Contact</a></li>          
                         </ul>
                     </div>
@@ -122,63 +121,51 @@
                 </div>
                 <div class="portfolio-main__footage">
                     <h3>Footage of my projects</h3>
-                    
                     <div class="portfolio-main__slider">
-                        <input type="radio" name="slider" id="slide1" checked />
-                        <input type="radio" name="slider" id="slide2" />
-                        <input type="radio" name="slider" id="slide3" />
-                        <input type="radio" name="slider" id="slide4" />
-                        <input type="radio" name="slider" id="slide5" />
-                        <input type="radio" name="slider" id="slide6" />
-                        <input type="radio" name="slider" id="slide7" />
-
+                        <div class="portfolio-main__slider-button portfolio-main__slider-button--prev is-hidden">
+                            <img src="images/prev.png" alt="previous arrow image" width="50">
+                        </div>
+                        
                         <div class="portfolio-main__slides">
-                            <div class="portfolio-main__overflow">
-                                <div class="portfolio-main__inner">
-                                        <div class="portfolio-main__slide portfolio-main__slide_1">
-                                            <img  src="images/Spring-Blender-Open-Movie-2020.jpg" alt="Spring short movie" width="300" height="300">
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_2">
-                                            <img class="portfolio-main__slide portfolio-main__slide_2" src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_3">
-                                            <img src="images/Spring-Le-superb-OpenSource.jpg" alt="Spring short movie" width="300" height="300">
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_4">
-                                            <img src="images/Efoyta-doc-side.PNG" alt="Efoyta website doctor's view" width="300" height="300">
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_5">
-                                            <img  src="images/Efoyta-home-page.PNG" alt="Efoyta website home page" width="300" height="300">   
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_6">
-                                            <img  src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
-                                        </div>
-                                        <div class="portfolio-main__slide portfolio-main__slide_7">
-                                            <img  src="images/maze.jpg" alt="maze for micro-mouse" width="300" height="300">
-                                        </div>
+                            <div class="portfolio-main__track">
+                                <div class="portfolio-main__slide current-slide">
+                                    <img src="images/Spring-Blender-Open-Movie-2020.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img  src="images/Spring-Open-Movie-blender_org.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img src="images/Spring-Le-superb-OpenSource.jpg" alt="Spring short movie" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img src="images/Efoyta-doc-side.PNG" alt="Efoyta website doctor's view" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img  src="images/Efoyta-home-page.PNG" alt="Efoyta website home page" width="300" height="300">   
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img  src="images/micro-mouse-1.jpg" alt="micro-mouse sample mini robot" width="300" height="300">
+                                </div>
+                                <div class="portfolio-main__slide">
+                                    <img  src="images/maze.jpg" alt="maze for micro-mouse" width="300" height="300">
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-main__controls">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
-                            <label for="slide5"></label>
-                            <label for="slide6"></label>
-                            <label for="slide7"></label>
+                        <div class="portfolio-main__slider-button portfolio-main__slider-button--next">
+                            <img src="images/next.png" alt="next arrow image">
                         </div>
-                        <div class="portfolio-main__bullets">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
-                            <label for="slide5"></label>
-                            <label for="slide6"></label>
-                            <label for="slide7"></label>
+                        <div class="portfolio-main__slider-nav">
+                            <button class="portfolio-main__slider-indicator current-slide"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
+                            <button class="portfolio-main__slider-indicator"></button>
                         </div>
-                    </div> 
+                    </div>
                 </div>
+                <script src="js/script.js"></script>
             </section>
         </main>
         <footer class="footer">
